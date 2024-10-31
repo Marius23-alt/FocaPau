@@ -1,0 +1,115 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f8f8f8;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: center; /* Centre le logo horizontalement */
+    position: relative; /* Permet de positionner .emoji par rapport au header */
+    background-color: #729365;
+    color: #fff;
+    padding: 1rem;
+}
+
+.emoji {
+    display: flex;
+    position: absolute;
+    bottom: 0; /* Positionne les emojis en bas du header */
+    text-align: center;
+}
+
+.emoji p{
+    margin-right: 12px;
+}
+
+
+nav {
+    color: #e29518; 
+    text-align: center;
+    margin: 1rem 0;
+}
+
+nav a {
+    margin: 0 15px;
+    color: #729365;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.container {
+    padding: 20px;
+    background-size: 80px 100%;
+}
+
+h2 {
+    color: #e29518;
+    text-align: center;
+}
+
+h3 {
+    color: #729365; /* Couleur verte pour tous les h3 */
+}
+
+
+.menu-row {
+    display: flex; /* Utilise Flexbox pour la mise en page */
+    justify-content: space-between; /* Espace entre les éléments */
+    flex-wrap: wrap; /* Permet à la ligne de se rompre si nécessaire */
+    margin-bottom: 20px; /* Espace entre les lignes */
+    align-items: flex-start; /* Aligne les éléments en haut */
+    gap: 20px; /* Espace entre chaque menu-item */
+}
+
+.menu-item {
+    background-color: #fff;
+    width: 48%; /* Assure que chaque div occupe presque la moitié de la largeur */
+    padding: 15px;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    box-sizing: border-box; /* Inclut le padding dans la largeur totale */
+    display: flex; /* Utilise Flexbox pour aligner les éléments */
+}
+
+.menu-image {
+    max-width: auto; /* Ajustez cette valeur pour la taille souhaitée */
+    height: 200px; /* Maintient le rapport d'aspect */
+    margin-right: 15px; /* Ajoute de l'espace à droite de l'image */
+}
+
+.large-image {
+    margin-top: 10px;
+    width: 40%; /* Ajustez selon vos besoins */
+    height: auto; /* Maintient le rapport d'aspect */
+    border-radius: 5px; /* Coins arrondis */
+}
+
+.menu-descriptions {
+    flex: 1; /* Prend l’espace restant à droite de l’image */
+    display: flex;
+    flex-direction: column;
+    gap: 10px; /* Espace entre chaque div de description */
+}
+
+.menu-item-foca {
+    background-color: #fff;
+    margin: 10px; /* Réduit l'espace entre les éléments */
+    padding: 15px;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    width: calc(80% - 20px); /* Ajustez cette valeur pour qu'elle soit plus large que 50% */
+    align-items: center; /* Aligne verticalement les éléments */
+    overflow: hidden; 
+    text-align: left; /* Aligne le texte à gauche */
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+    margin-top: 20px;
+}
