@@ -39,7 +39,6 @@ nav a {
     text-decoration: none;
     font-weight: bold;
 }
-
 .container {
     padding: 20px;
     background-size: 80px 100%;
@@ -104,6 +103,56 @@ h3 {
     align-items: center; /* Aligne verticalement les éléments */
     overflow: hidden; 
     text-align: left; /* Aligne le texte à gauche */
+}
+
+
+
+/* BOISSONS */
+
+.boisson-row {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    margin-top: 20px;
+}
+
+.boisson-image {
+    width: 40%;
+    max-width: 300px;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+
+.boisson-descriptions {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    width: 50%;
+}
+
+.boisson-item {
+    background-color: #fff;
+    padding: 10px 15px;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease;
+}
+
+.boisson-item:hover {
+    transform: translateY(-5px);
+}
+
+.boisson-item h3 {
+    color: #729365;
+    margin: 0;
+}
+
+.boisson-item p {
+    margin: 5px 0 0;
+    color: #333;
 }
 
 footer {
